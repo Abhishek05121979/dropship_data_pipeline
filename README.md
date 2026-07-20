@@ -10,12 +10,12 @@ In modern e-commerce and drop-shipping operations, data is heavily siloed. Store
 * **Fulfillment Data:** Logistical and shipping costs from 3PL/shipping providers.
 * **Marketing Data:** Advertising expenditures (e.g., Meta or Google Ads).
 
-Manually consolidating these files to calculate actual net profit is highly inefficient and error-prone[cite: 1]. This project engineers an automated solution where a user simply drops raw monthly batch exports into designated folders, and the underlying data pipeline dynamically ingests, combines, and transforms the data into actionable daily and monthly financial insights.
+Manually consolidating these files to calculate actual net profit is highly inefficient and error-prone. This project engineers an automated solution where a user simply drops raw monthly batch exports into designated folders, and the underlying data pipeline dynamically ingests, combines, and transforms the data into actionable daily and monthly financial insights.
 
 ---
 
 ## 🏗️ Data Architecture & Pipeline Design
-The project implements a **Folder-Ingestion Logic** rather than connecting to flat files[cite: 1]. This ensures that as new monthly files are added, the system automatically aggregates them upon refreshing.
+The project implements a **Folder-Ingestion Logic** rather than connecting to flat files. This ensures that as new monthly files are added, the system automatically aggregates them upon refreshing.
 
 ### 📂 Directory Structure
 * `📂 Client_Project_Alpha` (Root Master Folder)
